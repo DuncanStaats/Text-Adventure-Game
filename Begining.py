@@ -35,7 +35,7 @@ if choice_1 == 1:
 elif choice_1 == 2:
     print("You move your chained hand to your mouth to produce a needle.")
     print("You rattle with your chains using the needle and with a Clink! Your hands are set free")
-    print("Before you finish a man sweeps out of the shaddows and tackles you to get your needle. You loose your grip and the man takes it with him back into the shadows of the room.")
+    print("Before you finish a man sweeps out of the shaddows and tackles you to get your needle.\nYou loose your grip and the man takes the needle with him back into the shadows of the room.")
 else:
     print("You have decided to answer poorly, you get stabbed by another while chained and bleed to death.")
     print("You have died and will not be returned, please restart and be even more cautious of your future answers.")
