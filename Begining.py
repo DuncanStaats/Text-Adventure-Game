@@ -25,17 +25,22 @@ print("Thud!")
 print("Thump, Thump, Thump.\nYou wake up! You have a major headache and find out you are in chains.")
 print("Groggly, you think of what to do or else you fear you will die.\n1. Will you scream for help and pray some one will hear you.\n2. Will you stay quiet and try to unchain yourself.")
 print("Be warned, if you answer the question without the proper answer you will not see the end.")
-choice_1 = int(input("1 or 2: "))
 
-if choice_1 == 1:
-    print("He"+"e"*6+"l"*7+"p")
-    print("A man, from the shadows, takes a hand that taste of grim and salt to your mouth.")
-    print("S"+"hhh"+"u"*11+".","You'll wake the guards, are you trying to be whipped boy.")
+while True:
+    choice_1 = int(input("1 or 2: "))
 
-elif choice_1 == 2:
-    print("You move your chained hand to your mouth to produce a needle.")
-    print("You rattle with your chains using the needle and with a Clink! Your hands are set free")
-    print("Before you finish a man sweeps out of the shaddows and tackles you to get your needle.\nYou loose your grip and the man takes the needle with him back into the shadows of the room.")
-else:
-    print("You have decided to answer poorly, you get stabbed by another while chained and bleed to death.")
-    print("You have died and will not be returned, please restart and be even more cautious of your future answers.")
+    if choice_1 == 1:
+        print("He"+"e"*6+"l"*7+"p")
+        print("A man, from the shadows, takes a hand that taste of grim and salt to your mouth.")
+        print("S"+"hhh"+"u"*11+".","You'll wake the guards, are you trying to be whipped boy.")
+        break
+
+    elif choice_1 == 2:
+        print("You move your chained hand to your mouth to produce a needle.")
+        print("You rattle with your chains using the needle and with a Clink! Your hands are set free")
+        print("Before you finish a man sweeps out of the shaddows and tackles you to get your needle.\nYou loose your grip and the man takes the needle with him back into the shadows of the room.")
+        break
+
+    else:
+        print("You have decided to answer poorly, you get stabbed by another while chained and bleed to death.")
+        print("You have died and will now be returned to you first choice. Please answer correctly next time.")
