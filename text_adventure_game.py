@@ -42,19 +42,19 @@ def choice_1(player_score):
             print("That is not a valid option")
             continue
         if player_choice == 1:
-            Inmate_friend(player_score) 
+            inmate_friend(player_score)
             return player_choice
         elif player_choice == 2:
-            Inmate_attack()
+            inmate_attack()
             return player_choice
         elif player_choice == 3:
-            Guard_friend(player_score)
+            guard_friend(player_score)
             return player_choice
         else:
             print("Invalid choice")
             continue
 
-def Inmate_friend(player_score):
+def inmate_friend(player_score):
     player_score['score'] += 10
     print("HHHHEEEELLLL⎯")
     print("You meet an inmate and he tells you to stop or you will wake up the guards." 
@@ -64,12 +64,12 @@ def Inmate_friend(player_score):
     player_status(player_score)
     print()
 
-def Inmate_attack():
+def inmate_attack():
     print("You try and free yourself but end up getting attacked by an inmate."
           f"\nYou wrestle the inmate and stand up to attack him when you slip and crack your head open.")
     print()
 
-def Guard_friend(player_score):
+def guard_friend(player_score):
     player_score['score'] += 10
     print("An inmate tells you to shut up but, you ignore him and continue yelling."
           f"\nThe guard asks you what you want. You ask the guard to speak to the Captain."
